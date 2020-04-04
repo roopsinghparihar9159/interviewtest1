@@ -1,0 +1,12 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Search records</title>
+</head>
+<body>
+    <ul>
+        {% for emp in filter %}
+        <li>{{ emp.name }} - {{emp.pannumber }} - {{ emp.age }} - {{emp.gender }} - {{ emp.email }} - {{emp.city }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
